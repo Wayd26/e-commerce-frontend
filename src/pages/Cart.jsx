@@ -19,7 +19,6 @@ const Cart = () => {
     return (
         <>
             <Jumbotron
-                title={`Hello ${auth?.token && auth?.user?.name}`}
                 subtitle={
                     cart?.length
                         ? `You have ${cart.length} items in the cart. ${auth?.token ? "" : "Please login to checkout"

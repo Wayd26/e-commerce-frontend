@@ -10,7 +10,6 @@ const Search = () => {
     
     <>
       <Jumbotron
-        title="Search results"
         subtitle={
           values?.results?.length < 1
             ? "No products found"

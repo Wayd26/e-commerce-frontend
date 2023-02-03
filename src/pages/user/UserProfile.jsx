@@ -50,8 +50,7 @@ const UserProfile = () => {
     return (
         <>
             <Jumbotron
-                title={`Hello ${auth?.user?.name}`}
-                subtitle="User Dashboard"
+                subtitle="User Profile"
             />
             <div className=''>
                 <div className="w-full h-sreen flex">

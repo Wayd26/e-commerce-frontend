@@ -104,8 +104,7 @@ const AdminCategory = () => {
     <AddOrUpdateCategory type={type} id={currentId} name={name} isOpen={isOpen} closeModal={closeModal} handleUpdateCategory={handleUpdateCategory} handleAddCategory={handleAddCategory} handleNameChange={handleNameChange} />
     <DeleteConfirmation type={"category"} isOpenDelete={isOpenDelete} closeDeleteModal={closeDeleteModal} name={currentName} id={currentId} handleNameChange={handleNameChange} loadCategories={loadCategories} />
     <Jumbotron
-      title={`Hello ${auth?.user?.name}`}
-      subtitle="Admin Dashboard"
+      subtitle="Admin Category"
     />
     <div className=''>
       <div className="w-full h-sreen flex">

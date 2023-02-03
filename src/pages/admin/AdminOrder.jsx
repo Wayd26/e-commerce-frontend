@@ -49,7 +49,7 @@ const AdminOrder = () => {
  
    return (
      <>
-       <Jumbotron title={`Hello ${auth?.user?.name}`} subTitle="Dashboard" />
+       <Jumbotron subtitle="Admin Orders" />
  
        <div className="">
          <div className="w-full flex">
@@ -57,7 +57,7 @@ const AdminOrder = () => {
              <AdminMenu />
            </div>
            <div className="w-3/4 p-3">
-             <div className="p-3 mt-2 mb-2 bg-white">Orders</div>
+             <div className="p-3 my-2 bg-sky-600 rounded-lg dark:bg-gray-700 text-white">Orders</div>
  
              {orders?.map((o, i) => {
                return (
@@ -100,13 +100,16 @@ const AdminOrder = () => {
                      </tbody>
                    </table>
  
-                   <div className="">
-                     <div className="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 pt-4">
+                   <div className=""> 
+                     {/* <div className="w-full flex flex-wrap justify-around pt-4"> */}
+                     <div className="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 pt-4"> 
                        {o?.products?.map((p, i) => (
-                         <div className='mx-auto'><ProductCardHorizontal key={i} p={p} remove={false} /></div>
+                          <div className=''>
+                          <ProductCardHorizontal key={i} p={p} remove={false} />
+                           </div> 
                        ))}
                      </div>
-                   </div>
+                    </div> 
                  </div>
                );
              })}

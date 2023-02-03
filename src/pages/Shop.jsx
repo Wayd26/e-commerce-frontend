@@ -70,7 +70,7 @@ const Shop = () => {
     
   return (
     <>
-    <Jumbotron title="Hello World" subtitle="Welcome to React E-commerce" />
+    <Jumbotron subtitle="Shop" />
     <div className="m-auto p-4">
         <div className="w-full flex flex-wrap">
           <div className="md:w-1/4 w-full">

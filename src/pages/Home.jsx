@@ -57,7 +57,7 @@ const Home = () => {
   return (
     <>
     <div>
-      <Jumbotron title="Hello World" subtitle="Welcome to React E-commerce" />
+      <Jumbotron subtitle="Welcome" />
 
       <div className="w-full flex justify-between flex-wrap">
         <div className="md:w-1/2 w-full p-3">

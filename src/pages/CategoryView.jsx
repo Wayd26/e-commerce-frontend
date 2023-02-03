@@ -28,7 +28,6 @@ const CategoryView = () => {
   return (
     <>
       <Jumbotron
-        title={category?.name}
         subtitle={`${products?.length} ${products?.length > 1 ? 'products' : 'product'} found in "${category?.name}"`}
       />
 

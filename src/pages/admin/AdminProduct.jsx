@@ -230,8 +230,7 @@ const AdminProduct = () => {
                 loadProducts={loadProducts} />
 
             <Jumbotron
-                title={`Hello ${auth?.user?.name}`}
-                subtitle="Admin Dashboard"
+                subtitle="Admin Products"
             />
             <div className=''>
                 <div className="w-full h-sreen flex">

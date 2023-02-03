@@ -26,7 +26,7 @@ const UserOrders = () => {
 
   return (
     <>
-      <Jumbotron title={`Hello ${auth?.user?.name}`} subtitle="Dashboard" />
+      <Jumbotron subtitle="User Orders" />
 
       <div className="">
         <div className="w-full flex">

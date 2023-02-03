@@ -8,7 +8,7 @@ const CategoriesList = () => {
   
     return (
       <>
-        <Jumbotron title="Categories" subtitle="List of all categories" />
+        <Jumbotron subtitle="List of all categories" />
   
         <div className="container overflow-hidden">
           <div className="w-full flex gx-5 gy-5 mt-3 mb-5">

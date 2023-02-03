@@ -10,16 +10,15 @@ const AdminDashboard = () => {
     return (
         <>
             <Jumbotron
-                title={`Hello ${auth?.user?.name}`}
                 subtitle="Admin Dashboard"
             />
-            <div className='container'>
-                <div className="w-full h-sreen flex">
-                    <div className="w-1/4">
+            <div className=''>
+                <div className="w-full flex h-screen">
+                    <div className="w-1/4 h-screen">
 
                         <AdminMenu />
                     </div>
-                    <div className="w-3/4 p-3">
+                    <div className="w-3/4 p-3 min-h-full">
                         <div className="mx-auto p-3 mt-2 mb-2 bg-sky-600 rounded-lg dark:bg-gray-700 text-white">Admin Information</div>
 
                         <ul className="w-full mx-auto text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
