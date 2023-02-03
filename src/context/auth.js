@@ -10,7 +10,8 @@ const AuthProvider = ({ children }) => {
     })
 
     // axios config
-  axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+  axios.defaults.baseURL = process.env.NODE_ENV === 'development' ?
+  process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PRODL;
   axios.defaults.headers.common["Authorization"] = auth?.token;
 
 
