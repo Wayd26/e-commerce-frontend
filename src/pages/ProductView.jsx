@@ -69,7 +69,8 @@ const ProductView = () => {
                             >
                                 <img
                                     className="shadow-lg"
-                                    src={`${process.env.REACT_APP_API_URL}/product/photo/${product._id}`}
+                                    src={`${process.env.NODE_ENV === 'development' ?
+                                    process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PRODL}/product/photo/${product._id}`}
                                     alt={product.name}
                                     style={{ height: "400px", width: "100%", objectFit: "contain" }}
                                 />

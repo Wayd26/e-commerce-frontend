@@ -24,7 +24,8 @@ const AdminProductCard = ({ p }) => {
         >
           <img
             className="rounded-t-lg h-48 w-full"
-            src={`${process.env.REACT_APP_API_URL}/product/photo/${p._id}` || defaultImg}
+            src={`${process.env.NODE_ENV === 'development' ?
+            process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PROD}/product/photo/${p._id}` || defaultImg}
             // src={defaultImg} 
             alt={p.name}
           //  style={{ objectFit: "cover" }}

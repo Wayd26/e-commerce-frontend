@@ -24,7 +24,8 @@ const ProductCardHorizontal = ({ p, remove = true }) => {
                                         <div className="w-full flex">
                                             <div className="w-full md:w-1/3 p-2">
                                                 <img
-                                                    src={`${process.env.REACT_APP_API_URL}/product/photo/${p._id}`}
+                                                    src={`${process.env.NODE_ENV === 'development' ?
+                                                    process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PROD}/product/photo/${p._id}`}
                                                     alt={p.name}
                                                     className="w-full"
                                                     style={{
