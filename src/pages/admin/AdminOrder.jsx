@@ -105,7 +105,7 @@ const AdminOrder = () => {
                      <div className="w-full grid gap-4 grid-cols-1 lg:grid-cols-2 pt-4"> 
                        {o?.products?.map((p, i) => (
                           <div className=''>
-                          <ProductCardHorizontal key={i} p={p} remove={false} />
+                              <ProductCardHorizontal key={i} p={p} remove={false} />
                            </div> 
                        ))}
                      </div>

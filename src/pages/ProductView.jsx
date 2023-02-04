@@ -79,8 +79,7 @@ const ProductView = () => {
 
                         <div className="text-center text-gray-700 text-base mb-4 p-5">
                             <h1 className="font-bold text-3xl uppercase">{product?.name}</h1>
-                            <p className="font-semi-bold text-left">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            {/* <p className="font-semi-bold text-left">{product?.description}</p> */}
+                             <p className="font-semi-bold text-left">{product?.description}</p> 
                         </div>
 
                         <div className="flex justify-between lead p-5 font-bold">
