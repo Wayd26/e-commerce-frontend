@@ -10,17 +10,17 @@ const AuthProvider = ({ children }) => {
     })
 
     // axios config
-  axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PROD;
-  axios.defaults.headers.common["Authorization"] = auth?.token;
-  
-
+    axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_API_URL_DEV : process.env.REACT_APP_API_URL_PROD;
+    if (auth?.token) {
+        axios.defaults.headers.common["Authorization"] = auth?.token;
+    }
 
     useEffect(() => {
         const data = localStorage.getItem("auth")
 
-        if(data) {
+        if (data) {
             const parsed = JSON.parse(data);
-            setAuth({...auth, user: parsed.user, token: parsed.token})
+            setAuth({ ...auth, user: parsed.user, token: parsed.token })
         }
         // eslint-disable-next-line
     }, [])
