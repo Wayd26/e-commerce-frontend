@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { AdminProductCard, Jumbotron } from '../components/cards'
-// import { useAuth } from '../context/auth'
-import AppMenu from '../components/nav/AppMenu'
 import axios from 'axios';
 
 
