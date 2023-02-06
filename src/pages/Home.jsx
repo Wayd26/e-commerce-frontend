@@ -22,8 +22,7 @@ const Home = () => {
 
   const getTotal = async () => {
     try {
-      const { data } = await axios.get("/products-count", { headers: {
-        'Access-Control-Allow-Origin': '*'}})
+      const { data } = await axios.get("/products-count")
       setTotal(data);
     } catch (err) {
       console.log(err);
